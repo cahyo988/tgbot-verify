@@ -398,12 +398,15 @@ async def verify4_command(update: Update, context: ContextTypes.DEFAULT_TYPE, db
         )
 
 
+
+
+
 async def _auto_get_reward_code(
     verification_id: str,
     max_wait: int = 20,
     interval: int = 5
 ) -> Optional[str]:
-"""Ambil kode verifikasi otomatis (polling ringan, tidak memengaruhi konkurensi)
+    """Ambil kode verifikasi otomatis (polling ringan, tidak memengaruhi konkurensi)
     
     Args:
         verification_id: ID verifikasi
